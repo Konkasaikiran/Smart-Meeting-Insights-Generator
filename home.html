@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiran's AI World</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <img src="{{ url_for('static', filename='Crazy_logo_passport_size.png') }}" alt="Kiran AI Logo" class="logo">
+        <h1>Welcome to Kiran's AI World</h1>
+        <p>Explore AI tools and smart features.</p>
+    </header>
+
+    <main>
+        <!-- New Microsoft Teams Transcripts Heading -->
+        <h2 class="highlight-text">Paste your Microsoft Teams transcripts</h2>
+
+        <form action="/summarize" method="post">
+            <textarea name="text" rows="10" placeholder="Paste your text to summarize..."></textarea><br>
+            <button type="submit">Summarize</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>Made by Konka Sai Kiran ❤️</p>
+    </footer>
+</body>
+</html>
